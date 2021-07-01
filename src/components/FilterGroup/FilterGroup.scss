@@ -1,0 +1,67 @@
+@import "../../styles/modules/importAll";
+
+.filter-group-wrap {
+  background-color: $filter-group-backgroud;
+  border: 1px solid $border-color-primary;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  margin: -1px -1px 0;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+
+  .trend-filter {
+    display: flex;
+
+    .filter-item {
+      border: 1px solid #30363d;
+      font-weight: 500;
+      line-height: 20px;
+      padding: 5px 16px;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .selected {
+      background: $active-button-background;
+      border-color: $active-border-color;
+      color: $active-button-color;
+    }
+
+    .filter-item:first-child {
+      border-bottom-left-radius: 6px;
+      border-top-left-radius: 6px;
+    }
+
+    .filter-item:last-child {
+      border-bottom-right-radius: 6px;
+      border-top-right-radius: 6px;
+    }
+  }
+
+  .dropdown-group {
+    display: flex;
+    align-items: center;
+
+    .single-dropdown {
+      padding: 0 15px;
+      cursor: pointer;
+      color: $dropdown-text-color;
+      
+      ::after {
+        margin-left: 5px;
+        border: 4px solid transparent;
+        border-top-color: currentcolor;
+        content: "";
+        display: inline-block;
+        height: 0;
+        vertical-align: -2px;
+        width: 0;
+    }
+    }
+
+    .single-dropdown:hover {
+      color: $body-color-primary;
+    }
+  }
+}
