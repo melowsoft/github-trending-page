@@ -1,7 +1,9 @@
 import OcticonSVG from "../svgs/Octicon";
 import StarSVG from "../svgs/Star";
 import ForkSVG from "../svgs/Fork";
+import LikeSVG from "../svgs/Like";
 import AuthorList from "../AuthorList/AuthorList"
+import GithubButton from "../GithubButton/GithubButton"
 
 require('./RepositoryItem.scss')
 
@@ -14,7 +16,10 @@ const RepositoryItem: React.FC = () => {
           <h3 className="repo-title">GTAmodding / re3</h3>
         </div>
         
-        <div className="repo-star"><StarSVG /> <span className="star-text">Star</span></div>
+        <div className="right-side">
+        <GithubButton svgIcon={<LikeSVG />} text="Sponsor"/>
+        <GithubButton svgIcon={<StarSVG />} text="Star"/>
+        </div>
       </div>
       <p className="description">
           Cloud-native neural search framework for 𝙖𝙣𝙮 kind of data

@@ -1,14 +1,17 @@
-
-.avatar {
-    background-image: url('http://i.stack.imgur.com/Dj7eP.jpg');
-    width: 24px;
-    height: 24px;
-    background-size: cover;
-    background-position: top center;
-    border-radius: 50%;
-    display: inline-block;
-    flex-shrink: 0;
-    line-height: 1;
-    overflow: hidden;
-    margin-left: 3px;
+.avatar-wrap {
+  position: relative;
+  .avatar {
+      background-image: url('http://i.stack.imgur.com/Dj7eP.jpg');
+      width: 24px;
+      height: 24px;
+      background-size: cover;
+      background-position: top center;
+      border-radius: 50%;
+      display: inline-block;
+      flex-shrink: 0;
+      line-height: 1;
+      overflow: hidden;
+      margin-left: 3px;
+      cursor: pointer;
+  }
 }

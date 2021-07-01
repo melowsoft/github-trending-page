@@ -24,6 +24,10 @@
       }
     }
 
+    .right-side {
+      @include flexPlacement(row, center, center)
+    }
+
     .repo-star {
       @include flexPlacement(row, center, center);
       font-size: 12px;
