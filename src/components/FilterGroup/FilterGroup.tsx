@@ -16,7 +16,8 @@ const FilterGroup: React.FC<Props> = ({activeFilter, setActiveFilter}: Props) =>
           </div>
 
           <div className="dropdown-group">
-            <div className="single-dropdown"> <span className="select-menu-button">Spoken language: Any</span></div>
+            {activeFilter === 'repo' 
+            && (<div className="single-dropdown"> <span className="select-menu-button">Spoken language: Any</span></div>)}
             <div className="single-dropdown"> <span>Language : Any</span></div>
             <div className="single-dropdown"> <span>Date range: Today</span></div>
           </div>

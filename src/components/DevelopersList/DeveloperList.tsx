@@ -1,7 +1,14 @@
+import DeveloperItem from "../DeveloperItem/DeveloperItem";
 
 const DevelopersList: React.FC = () => {
   return (
-    <div>Repoistory List</div>
+    <>
+      <DeveloperItem />
+      <DeveloperItem />
+      <DeveloperItem />
+      <DeveloperItem />
+      <DeveloperItem />
+   </>
   )
 }
 

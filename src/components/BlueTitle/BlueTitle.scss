@@ -1,0 +1,13 @@
+@import "../../styles//modules/importAll";
+
+.repo-title {
+  margin-left: 7px;
+  line-height: 1.25;
+  font-weight: 600;
+  font-size: 20px;
+  color: $title-link-color;
+  cursor: pointer;
+}
+.repo-title:hover {
+  text-decoration: underline;
+}

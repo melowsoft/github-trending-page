@@ -1,0 +1,50 @@
+@import "../../styles//modules/importAll";
+
+.single-dev {
+  padding: 16px;
+  margin-top: -1px;
+  border-top: 1px solid $single-row-border;
+  display: flex;
+
+  .numbering {
+    width: 16px;
+    font-size: 12px;
+  }
+
+  .avatar-wrap {
+    margin-right: 16px;
+    margin-left: 16px;
+  }
+
+  .name-section {
+    width: 33%;
+    .dev-lastname {
+      margin-left: 7px;
+      margin-top: 4px;
+      margin-bottom: 4px;
+      color: $body-color-secondary;
+      font-weight: 500;
+      font-size: 16px;
+    }
+  }
+
+  .repo-data-section {
+    width: 33%;
+
+    .repo-description {
+      font-size: 12px;
+      margin-left: 7px;
+      margin-top: 10px;
+      width: 70%;
+      line-height: 1.5;
+      color: $body-color-secondary;
+    }
+  }
+
+  .buttons-section {
+    @include flexPlacement(row, flex-end, center);
+    width: 33%;
+
+  
+  }
+}

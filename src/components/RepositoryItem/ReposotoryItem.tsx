@@ -4,6 +4,7 @@ import ForkSVG from "../svgs/Fork";
 import LikeSVG from "../svgs/Like";
 import AuthorList from "../AuthorList/AuthorList"
 import GithubButton from "../GithubButton/GithubButton"
+import BlueTitle from "../BlueTitle/BlueTitle"
 
 require('./RepositoryItem.scss')
 
@@ -13,7 +14,7 @@ const RepositoryItem: React.FC = () => {
       <div className="title-wrap">
         <div className="title-flex">
             <OcticonSVG />
-          <h3 className="repo-title">GTAmodding / re3</h3>
+          <BlueTitle size={20} title="Repository name"/>
         </div>
         
         <div className="right-side">
@@ -42,7 +43,7 @@ const RepositoryItem: React.FC = () => {
               <span className="fork-figure">226</span> 
             </div>
             <div className="built section-item">
-                <span>Built by</span>
+                <span className="built-by">Built by</span>
               
               <AuthorList />
             </div>
