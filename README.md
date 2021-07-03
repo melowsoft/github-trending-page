@@ -27,7 +27,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-**Note: I added a proxy on Dev to by-pass Cors Error on Github API !**
+**Note: I added a proxy on Dev to by-pass Cors Error on Github API**
 
 ### Stack
 - React
