@@ -1,6 +1,6 @@
 @import "../../styles//modules/importAll";
 
-.skeleton-img, .skeleton-avatar, .tweet-footer, .tweet-text, .tweet-header {
+.skeleton-img, .skeleton-avatar, .tweet-footer, .tweet-text, .tweet-header, .star-container {
   -webkit-animation: skeleton 1s ease-in-out forwards infinite;
           animation: skeleton 1s ease-in-out forwards infinite;
   -webkit-animation-direction: alternate;
@@ -36,7 +36,6 @@
 
 
 .tweet {
-  background-color: #15202B;
   padding: 0.8rem 0.75rem;
   width: 100%;
   border: 1px solid $single-row-border;
@@ -49,6 +48,7 @@
 .tweet-header {
   transform-origin: bottom;
 }
+
 .tweet-text {
   -webkit-animation-delay: 200ms;
           animation-delay: 200ms;
@@ -61,8 +61,23 @@
           animation-delay: 400ms;
 }
 
+.right-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.third-col {
+  display: flex;
+  justify-content: flex-end;
+
+  .star-container {
+    transform-origin: bottom;
+  }
+}
+
 .skeleton {
-  background-color: #15202B;
+  display: grid;
+  grid-template-columns: 2fr 4fr 3fr;
 }
 .skeleton-avatar {
   width: 48px;
@@ -76,6 +91,7 @@
   background-color: #213243;
   border-radius: 3px;
   margin-bottom: 0.3rem;
+  border-radius: 6px;
 }
 .skeleton-line.heading {
   height: 1rem;

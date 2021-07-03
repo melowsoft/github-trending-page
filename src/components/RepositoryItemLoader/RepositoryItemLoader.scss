@@ -1,13 +1,13 @@
 @import "../../styles//modules/importAll";
 
-.skeleton-img, .skeleton-avatar, .tweet-footer, .tweet-text, .tweet-header, .author-list, .star-btn, .today-stars, .bottom-icon {
-  -webkit-animation: skeleton 1s ease-in-out forwards infinite;
-          animation: skeleton 1s ease-in-out forwards infinite;
+.repo-img, .repo-avatar, .repo-footer, .repo-text, .repo-header, .author-list, .star-btn, .today-stars, .bottom-icon {
+  -webkit-animation: repo 1s ease-in-out forwards infinite;
+          animation: repo 1s ease-in-out forwards infinite;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
 }
 
-@-webkit-keyframes skeleton {
+@-webkit-keyframes repo {
   0% {
     opacity: 0.2;
     transform: translateY(6px) scale(0.98);
@@ -18,7 +18,7 @@
   }
 }
 
-@keyframes skeleton {
+@keyframes repo {
   0% {
     opacity: 0.2;
     transform: translateY(6px) scale(0.98);
@@ -35,7 +35,7 @@
 }
 
 
-.tweet {
+.repo {
   padding: 0.8rem 0.75rem;
   width: 100%;
   border: 1px solid $single-row-border;
@@ -43,7 +43,7 @@
   margin-top: -1px;
 }
 
-.tweet-header {
+.repo-header {
   transform-origin: bottom;
   display: flex;
   width: 80%;
@@ -58,7 +58,7 @@
   justify-content: space-between;
 }
 
-.tweet-text {
+.repo-text {
   -webkit-animation-delay: 200ms;
           animation-delay: 200ms;
 }
@@ -86,28 +86,28 @@
           animation-delay: 400ms;
 }
 
-.skeleton {
+.repo {
   
 }
-.skeleton-avatar {
+.repo-avatar {
   width: 48px;
   height: 48px;
   background-color: #213243;
   border-radius: 100%;
   float: left;
 }
-.skeleton-line {
+.repo-line {
   height: 0.7rem;
   background-color: #213243;
   border-radius: 3px;
   margin-bottom: 0.3rem;
   border-radius: 6px;
 }
-.skeleton-line.heading {
+.repo-line.heading {
   height: 1rem;
   margin-bottom: 0.5rem;
 }
-.skeleton-img {
+.repo-img {
   height: 250px;
   background-color: #213243;
   border-radius: 0.75rem;
@@ -115,7 +115,7 @@
   -webkit-animation-delay: 300ms;
           animation-delay: 300ms;
 }
-.skeleton-button {
+.repo-button {
   display: block;
   width: 26px;
   height: 26px;
@@ -123,7 +123,7 @@
   flex-shrink: 0;
 }
 
-.skeleton-button.rounded {
+.repo-button.rounded {
   border-radius: 100%;
   margin-right: 1px;
 }
