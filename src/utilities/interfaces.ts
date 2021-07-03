@@ -13,9 +13,23 @@ totalStars: number;
 url: string;
 username: string;
 }
+export interface Developer {
+  avatar: string;
+  name: string;
+  popularRepository: PopularRepo;
+  rank: number;
+  since: string;
+  url: string
+  username: string;
+}
 
 export interface Author {
   avatar: string;
   url: string
   username: string;
+}
+export interface PopularRepo {
+  description: string;
+  repositoryName: string;
+  url: string;
 }

@@ -1,17 +1,11 @@
 import RepositoryItem from "../RepositoryItem/ReposotoryItem";
-import { useQuery } from "react-query"
-import axios from "axios"
+import { useQuery, UseQueryResult } from "react-query"
+import {Repository} from "../../utilities/interfaces"
+import {getRepositories} from "../../api"
 
-const getRepositories = async () => {
-  try {
-      return await axios.get("/repositories")
-  } catch (err) {
-      throw new Error(err);
-  }
-}
 
 const RepositoryList: React.FC = () => {
-    const {data, isLoading, error} = useQuery('repos', getRepositories) 
+    const {data, isLoading, error}: UseQueryResult<Repository[], Error> = useQuery<Repository[], Error>('repos', getRepositories, {staleTime: 5 * 1000}) 
   
    if (isLoading){
      return <p>Loading...</p>
@@ -21,14 +15,11 @@ const RepositoryList: React.FC = () => {
      return <p>Error...something went wrong</p>
    }
 
-   if (data) {
-     console.log(data, "for checks")
-   }
   
   return (
     <>
       {
-        data && data.data.map((repo: any) => (
+        data && data.map((repo: Repository) => (
           <RepositoryItem repo={repo} key={repo.rank}/>
         ))
       }

@@ -17,7 +17,7 @@
   }
 
   .name-section {
-    width: 33%;
+    width: 28%;
     .dev-lastname {
       margin-left: 7px;
       margin-top: 4px;
@@ -29,7 +29,7 @@
   }
 
   .repo-data-section {
-    width: 33%;
+    width: 38%;
 
     .repo-description {
       font-size: 12px;
@@ -42,7 +42,7 @@
   }
 
   .buttons-section {
-    @include flexPlacement(row, flex-end, center);
+    @include flexPlacement(row, flex-end, flex-start);
     width: 33%;
 
   

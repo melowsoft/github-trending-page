@@ -4,31 +4,39 @@ import AvatarView from "../AvatarView/AvatarView";
 import BlueTitle from "../BlueTitle/BlueTitle"
 import PopularTag from "../PopularTag/PopularTag"
 import RepoName from "../RepoName/RepoName"
+import {Developer} from "../../utilities/interfaces"
 
 require('./DeveloperItem.scss')
 
-const DeveloperItem: React.FC = () => {
+interface Props {
+  dev: Developer;
+}
+
+const DeveloperItem: React.FC<Props> = ({dev}: Props) => {
   return (
     <div className="single-dev">
-      <div className="numbering">1</div>
+      <div className="numbering">{dev.rank}</div>
       <div className="avatar-wrap">
         <AvatarView 
-          image="http://i.stack.imgur.com/Dj7eP.jpg"
+          image={dev.avatar ? dev.avatar : ""}
           size={48}
          />
       </div>
       <div className="name-section">
-          <BlueTitle size={20} title="Brandon"/>
+          <BlueTitle size={20} title={dev.name ? dev.name : ""}/>
           <h4 className="dev-lastname">
-            Williams
+            {dev.username ? dev.username : ""}
           </h4>
       </div>
 
       <div className="repo-data-section">
           <PopularTag />
-          <RepoName repoName="Sub repository name"/>
+          {
+            dev.popularRepository.repositoryName && ( <RepoName repoName={dev.popularRepository.repositoryName ? dev.popularRepository.repositoryName : ""}/>)
+          }
+         
           <p className="repo-description">
-          Monitor for any changes in your node.js application and automatically restart the server - perfect for development
+          {dev.popularRepository.description ? dev.popularRepository.description : ""}
           </p>
       </div>
 
