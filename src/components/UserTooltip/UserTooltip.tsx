@@ -13,7 +13,6 @@ const UserTooltip: React.FC<Props> = ({show, user}: Props) => {
   if (!show) return null;
   return (
     <div className="user-tooltip">
-        <div className="header">Online store 2.0</div>
         <div className="tooltip-body">
         <AvatarView 
           image={user ? user.avatar : ""}

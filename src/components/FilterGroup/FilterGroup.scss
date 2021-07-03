@@ -13,6 +13,7 @@
 
   .trend-filter {
     display: flex;
+    height: 32px;
 
     .filter-item {
       border: 1px solid #30363d;
@@ -21,7 +22,7 @@
       padding: 5px 16px;
       position: relative;
       cursor: pointer;
-      height: 32px;
+     
     }
 
     .selected {
@@ -49,6 +50,7 @@
       padding: 0 15px;
       cursor: pointer;
       color: $dropdown-text-color;
+      font-size: 14px;
       
       ::after {
         margin-left: 5px;
