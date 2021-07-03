@@ -41,7 +41,6 @@
         .firstname {
           font-weight: 700;
           font-size: 14px;
-          margin-right: 5px;
         }
       }
       .location {
@@ -55,16 +54,4 @@
       }
     }
   }
-}
-.user-tooltip::after {
-  border: 4px solid $border-color-primary;
-  border-top-color: $tooltip-card-background;
-  content: "";
-  display: inline-block;
-  height: 0;
-  width: 0;
-  position: absolute;
-  bottom: -7px;
-  left: 10px;
-
 }

@@ -9,6 +9,7 @@
   padding: 16px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   .trend-filter {
     display: flex;
@@ -20,6 +21,7 @@
       padding: 5px 16px;
       position: relative;
       cursor: pointer;
+      height: 32px;
     }
 
     .selected {

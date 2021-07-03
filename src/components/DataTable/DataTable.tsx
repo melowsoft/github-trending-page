@@ -6,7 +6,7 @@ require('./DataTable.scss')
 
 
 const DataTable: React.FC = () => {
-  const [activeFilter, setActiveFilter] = useState<string>("dev")
+  const [activeFilter, setActiveFilter] = useState<string>("repo")
     return (
       <div className="data-table-wrap">
         <FilterGroup 

@@ -52,9 +52,17 @@
     margin-top: 10px;
     font-size: 12px;
 
-
     .left-section {
       @include flexPlacement(row, space-between, center);
+
+      .language {
+
+        .language-name {
+      
+        }
+
+
+      }
 
       .section-item {
         @include flexPlacement(row, center, center);

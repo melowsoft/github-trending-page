@@ -1,31 +1,33 @@
 import AvatarView from "../AvatarView/AvatarView"
 import Loc from "../../assets/images/placeholder.svg"
+import { Author } from "../../utilities/interfaces"
 
 require('./UserTooltip.scss')
 
 interface Props {
   show: boolean;
+  user: Author;
 }
 
-const UserTooltip: React.FC<Props> = ({show}: Props) => {
+const UserTooltip: React.FC<Props> = ({show, user}: Props) => {
   if (!show) return null;
   return (
     <div className="user-tooltip">
         <div className="header">Online store 2.0</div>
         <div className="tooltip-body">
         <AvatarView 
-          image="http://i.stack.imgur.com/Dj7eP.jpg"
+          image={user ? user.avatar : ""}
           size={70}
           />
 
           <div className="author-details">
               <div className="author-fullname">
-                <div className="firstname">Author</div>
-                 <div className="lastname">Name</div>
+                <div className="firstname"></div>
+                 <div className="lastname">{user.username ? user.username : ""}</div>
               </div>
               <div className="location">
                 <img src={Loc} className="location-icon" alt="location"/>
-                <p>Lagos, Nigeria</p>
+                <p></p>
               </div>
           </div>
         </div>
