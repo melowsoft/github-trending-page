@@ -1,1 +1,21 @@
+@import "../../styles/modules/importAll";
 
+.error-wrap {
+  @include flexPlacement(column, center, center);
+  width: 100%;
+  height: 50vh;
+
+  .err-info {
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #8b949e;
+  }
+
+  .err-desc {
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #8b949e;
+  }
+}
