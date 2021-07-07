@@ -1,6 +1,14 @@
 # Github Trending Pages
 
+## Summary
+
 This project is a clone of the github trending pages. It was bootstrapped with create-react-app typescript.
+
+## Features
+
+* On the repositories tab you will see the most popular repositories created today sorted by stars number. 
+* On the developer tab you can also see the most popular developers today sorted by stars number. 
+
 
 ## Installation
 - clone the repository locally with: 
